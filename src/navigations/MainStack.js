@@ -23,6 +23,9 @@ const MainStack = () => {
         }}
         component={Splash}
       />
+     
+
+    
       {/*  All Dua */}
       <Stack.Screen
         name="AllDua"
@@ -54,6 +57,9 @@ const MainStack = () => {
         }}
         component={AllDua}
       />
+
+
+
       {/*  When Wake up */}
       <Stack.Screen
         name="WhenWakeUp"

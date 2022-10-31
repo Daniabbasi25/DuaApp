@@ -7,6 +7,8 @@ import AppRout from "./src/navigations/AppRout";
 
 
 export default function App() {
+ 
+
   return <AppRout />;
 }
 
