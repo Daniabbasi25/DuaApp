@@ -6,7 +6,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import PrayerTiming from '../screens/bottomTab/prayerTime';
 import Favourite from '../screens/bottomTab/favourite';
 import Setting from '../screens/bottomTab/setting';
-import Profile from '../screens/bottomTab/profile';
+import Profile from '../screens/bottomTab/profile/index';
 
 // components
 

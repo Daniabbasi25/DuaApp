@@ -14,11 +14,11 @@ const Profile=()=> {
             <View style={{flexDirection:'row',justifyContent:'space-between',paddingRight:10,}}>
             <Image
             style={{height:50, width:35,}}
-            source={require('../../assets/boy.png')}
+            source={require('../../../assets/boy.png')}
             />
             <Image
             style={{height:29, width:25,}}
-            source={require('../../assets/bell.png')}
+            source={require('../../../assets/bell.png')}
             />
 
             </View>

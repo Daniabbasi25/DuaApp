@@ -36,7 +36,7 @@ const ThirdRoute = () => (
                 <View style={{paddingRight:10}}>
                 <Image
                 style={styles.image}
-                source={require('../../../assets/email.png')}
+                source={require('../../../../assets/email.png')}
                 />
                 </View>
                 <Text style={styles.text}>Email</Text>
@@ -48,7 +48,7 @@ const ThirdRoute = () => (
                 />
                 <Image
                 style={styles.eye}
-                source={require('../../../assets/eye.png')}
+                source={require('../../../../assets/eye.png')}
                 />
             </View>
 
