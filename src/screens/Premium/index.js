@@ -5,23 +5,26 @@ import Modal from 'react-native-modal';
 const {width,height}=Dimensions.get('window');
 import styles from './styles.js';
 
-const Premium =()=>{
+const Premium =({navigation})=>{
     return(
         <View style={styles.container}>
             {/* <Text>hello Premium</Text> */}
             <ImageBackground 
-            source={require('../../assets/premium.png')} 
+            source={require('../../../assets/premium.png')} 
             style={{width:width, height:height}}>
                 <View style={{backgroundColor: 'rgba(0,0,0,0.5)',height:height,width:width, }}>
                 <View style={{ padding:20, justifyContent:'center'}}>
+               <TouchableOpacity onPress={()=>navigation.goBack()}>
+
                 <Image
-                source={require('../../assets/cross.png')}
+                source={require('../../../assets/cross.png')}
                 style={{height: 30, width: 30, alignSelf:'flex-end',}}
                 />
+                </TouchableOpacity>
                 </View>
                 <View style={{ padding:20, justifyContent:'center',paddingTop:hp('40%'), padding:hp('5')}}>
                 <Image
-                source={require('../../assets/quran.png')}
+                source={require('../../../assets/quran.png')}
                 style={{height: 83, width: 119, alignSelf:'center',}}
                 />
                 </View>
@@ -31,7 +34,7 @@ const Premium =()=>{
                 <View style={{ justifyContent:'center', alignItems:'center', flexDirection:'row'}}>
                 <View style={{paddingLeft:wp('3'), paddingTop:hp('2'), paddingLeft:wp('5')}}>
                 <Image
-                source={require('../../assets/check.png')}
+                source={require('../../../assets/check.png')}
                 style={{height: 23, width: 24,}}
                 />
                 </View>

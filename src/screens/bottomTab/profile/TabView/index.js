@@ -34,7 +34,10 @@ const ThirdRoute = () => (
             <View style={{width:wp('90%'), height:height, alignSelf:'center'}}>
                 <View style={{flexDirection:'row'}}>
                 <View style={{paddingRight:10}}>
-                <Text>mughammad</Text>
+                {/* <Image
+                style={styles.image}
+                source={require('../../../../assets/email.png')}
+                /> */}
                 </View>
                 <Text style={styles.text}>Email</Text>
                 </View>
@@ -43,8 +46,11 @@ const ThirdRoute = () => (
                 <TextInput
                 style={styles.input}
                 />
-                <Text>mughammad</Text>
-                
+                {/* <Image
+                style={styles.eye}
+                source={require('../../../../assets/eye.png')}
+                /> */}
+                <Text>muhammad</Text>
             </View>
 
   </View>

@@ -27,16 +27,19 @@ const styles = StyleSheet.create ({
       },
       modalContainer: {
         width: wp('80%'),
+        height:hp('40%'),
         backgroundColor: 'white',
         //backgroundColor:'yellow',
-        paddingHorizontal: 20,
-        paddingVertical: 30,
+        //paddingHorizontal: 20,
+        //paddingVertical: 30,
         //borderRadius: 20,
         elevation: 20,
       },
       header: {
         width: '100%',
         height: 40,
+       padding:hp('3%'),
+       // padding:'5%',
         alignItems: 'flex-end',
         justifyContent: 'center',
         //backgroundColor:'pink'
@@ -50,28 +53,29 @@ const styles = StyleSheet.create ({
         right:wp('2%'),
         //width:wp('40%'),
         //paddingLeft:wp('4%'),
-        float:'right'
+        //float:'right'
       },
       card:{
-        flexDirection:'column',
+        //flexDirection:'column',
         //backgroundColor:'red',
-        width:wp('80%'), 
-        alignSelf:'center',
-        padding:hp('5%'),
+        //width:wp('80%'), 
+        //alignSelf:'center',
+        padding:hp('0.25%'),
+        //paddingLeft:wp('10%'),
     },
     textF:{
-       //backgroundColor:'yellow',
+      //  backgroundColor:'yellow',
         fontSize:14,
         fontWeight:400,
         //paddingTop:34,
-        paddingLeft:20,
+        //paddingLeft:20,
         //width:200,
-        padding:hp('2%')
+        paddingTop:hp('1%')
     },
     flag:{
-        //padding:30,
+        padding:wp('1%'),
         //paddingRight:50,
-        left:34,
+        //left:34,
     },
 });
 export default styles;

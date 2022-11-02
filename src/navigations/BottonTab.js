@@ -4,9 +4,9 @@ import {Text, TouchableOpacity, View,Image} from 'react-native';
 import HomeScreen from '../screens/bottomTab/HomeScreen';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import PrayerTiming from '../screens/bottomTab/prayerTime';
-import Favourite from '../screens/bottomTab/favourite';
-import Setting from '../screens/bottomTab/setting';
+import Setting from '../screens/bottomTab/setting/index';
 import Profile from '../screens/bottomTab/profile/index';
+import Favourite from '../screens/bottomTab/favourite/index';
 
 // components
 

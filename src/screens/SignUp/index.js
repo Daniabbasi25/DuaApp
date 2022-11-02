@@ -3,7 +3,7 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-nativ
 import { FlatList, Text, View, StyleSheet, TouchableOpacity, Dimensions, Button, Image, TextInput, ScrollView} from 'react-native';
 const {width,height}=Dimensions.get('window');
 import styles from './styles';
-const SignUp =()=>{
+const SignUp =({navigation})=>{
     return(
         
         <View style={styles.container}>
@@ -11,7 +11,7 @@ const SignUp =()=>{
                 <View>
                     <Image
                     style={{height:height, width:width}}
-                    source={require('../../assets/bg.png')}
+                    source={require('../../../assets/bg.png')}
                     />
                 </View>
                 <View style={styles.form}>
@@ -25,7 +25,7 @@ const SignUp =()=>{
                     <View style={{paddingRight:10}}>
                     <Image
                     style={styles.image}
-                    source={require('../../assets/user.png')}
+                    source={require('../../../assets/user.png')}
                     />
                     </View>
                     <Text style={styles.text}>Full Name</Text>
@@ -41,7 +41,7 @@ const SignUp =()=>{
                     <View style={{paddingRight:10}}>
                     <Image
                     style={styles.image}
-                    source={require('../../assets/email.png')}
+                    source={require('../../../assets/email.png')}
                     />
                     </View>
                     <Text style={styles.text}>Email</Text>
@@ -57,7 +57,7 @@ const SignUp =()=>{
                     <View style={{paddingRight:10}}>
                     <Image
                     style={styles.image}
-                    source={require('../../assets/lock.png')}
+                    source={require('../../../assets/lock.png')}
                     />
                     </View>
                     <Text style={styles.text}>Password</Text>
@@ -73,7 +73,7 @@ const SignUp =()=>{
                     <View style={{paddingRight:10}}>
                     <Image
                     style={styles.image}
-                    source={require('../../assets/lock.png')}
+                    source={require('../../../assets/lock.png')}
                     />
                     </View>
                     <Text style={styles.text}>Confirm Password</Text>
@@ -97,7 +97,7 @@ const SignUp =()=>{
                     />
                     <View style={{flexDirection:'row', top:20,justifyContent:'center', alignContent:'center',}}>
                     <Text style={styles.login}>Already have an account? </Text>
-                    <TouchableOpacity>
+                    <TouchableOpacity  onPress={() =>navigation.navigate('login')}>
                     <Text style={styles.resend}>Login</Text>
                     </TouchableOpacity>
                     </View>
@@ -110,7 +110,7 @@ const SignUp =()=>{
                             <View style={{flexDirection:'row',}}>
                             <Image
                             style={styles.logo}
-                            source={require('../../assets/google.png')}
+                            source={require('../../../assets/google.png')}
                             />
                             <Text style={styles.btnText}>Google</Text>
                             </View>
@@ -122,7 +122,7 @@ const SignUp =()=>{
                             <View style={{flexDirection:'row',}}>
                             <Image
                             style={styles.logo}
-                            source={require('../../assets/google.png')}
+                            source={require('../../../assets/google.png')}
                             />
                             <Text style={styles.btnText}>Facebook</Text>
                             </View>

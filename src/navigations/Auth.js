@@ -3,22 +3,19 @@ import React from "react";
 
 import Ionicons from "@expo/vector-icons/Feather";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Home from "../screens/bottomTab/HomeScreen";
 import Splash from "../screens/SplashScreen";
-import SvgComponent from "../screens/SplashScreen";
-import BottomTabNavigator from "./BottonTab";
-import AllDua from "../screens/allDua";
-import WhenWakeUp from "../screens/when-waking-up";
-import Premium from '../screens/Premium/index';
-import Flags from '../screens/Flags/index'
+import Login from "../screens/Login";
+import SignUp from "../screens/SignUp";
 
 
 
 const Stack = createNativeStackNavigator();
 
-const MainStack = () => {
+const Auth = () => {
   return (
-    <Stack.Navigator initialRouteName="Splash">
+    <Stack.Navigator screenOptions={
+        {headerShown:false,}
+    } initialRouteName="Splash">
       {/*  SplashScreen */}
       <Stack.Screen
         name="Splash"
@@ -27,39 +24,20 @@ const MainStack = () => {
         }}
         component={Splash}
       />
-      {/*  All Dua */}
+      {/*   Login  */}
       <Stack.Screen
-        name="AllDua"
-        options={{
-          headerStyle: {
-            backgroundColor:
-              "linear-gradient(180deg, #4E54C8 0%, #A044FF 100%)",
-          },
-          headerTintColor: "#fff",
-
-          // headerLeft: () => <Ionicons name="sun" size={25} color="#fff" />,
-          headerTitle: "When Waking up ",
-          headerRight: () => (
-            <>
-              <Image
-                style={{
-                  backgroundColor: "white",
-                  borderRadius: 50,
-                  marginBottom: 5,
-                }}
-                source={require("../../assets/usa.png")}
-              />
-              <Text style={{ color: "#fff", fontSize: 15, marginBottom: 5 }}>
-                English
-              </Text>
-              <Ionicons name="chevron-down" size={25} color="#fff" />
-            </>
-          ),
-        }}
-        component={AllDua}
+        name="login"
+       
+        component={Login}
+      />
+      {/*   Login  */}
+      <Stack.Screen
+        name="signup"
+       
+        component={SignUp}
       />
       {/*  When Wake up */}
-      <Stack.Screen
+      {/* <Stack.Screen
         name="WhenWakeUp"
         options={{
           headerStyle: {
@@ -88,8 +66,8 @@ const MainStack = () => {
           ),
         }}
         component={WhenWakeUp}
-      />
-      <Stack.Screen
+      /> */}
+      {/* <Stack.Screen
         name="Premium"
         options={{
           headerStyle: {
@@ -118,8 +96,8 @@ const MainStack = () => {
           ),
         }}
         component={Premium}
-      />
-      <Stack.Screen
+      /> */}
+      {/* <Stack.Screen
         name="Flags"
         options={{
           headerStyle: {
@@ -148,10 +126,10 @@ const MainStack = () => {
           ),
         }}
         component={Flags}
-      />
+      /> */}
 
       {/* BottomTabNavigator */}
-      <Stack.Screen
+      {/* <Stack.Screen
         name="Bottom"
         component={BottomTabNavigator}
         options={{
@@ -179,9 +157,9 @@ const MainStack = () => {
             </>
           ),
         }}
-      />
+      /> */}
     </Stack.Navigator>
   );
 };
 
-export default MainStack;
+export default Auth;
