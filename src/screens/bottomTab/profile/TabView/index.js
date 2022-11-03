@@ -90,7 +90,7 @@ export default function TabViewExample() {
       onIndexChange={setIndex}
       initialLayout={initialLayout}
       style={styles.container}
-      renderTabBar={props => <TabBar {...props} style={styles.tabBar} indicatorStyle={{backgroundColor:'#A044FF', padding:1, }}/>}
+      renderTabBar={props => <TabBar {...props} style={{activeColor:"green", backgroundColor:'black'}} indicatorStyle={{backgroundColor:'#A044FF', padding:1, }}/>}
     />
   );
 }

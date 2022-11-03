@@ -29,7 +29,7 @@ const styles = StyleSheet.create ({
     },
     heading:{
         color:'#A044FF',
-        fontWeight:500,
+        fontWeight:"500",
         fontSize:24,
         padding:10,
         alignSelf:'center'
@@ -45,7 +45,7 @@ const styles = StyleSheet.create ({
     },
     text:{
         fontSize:14,
-        fontWeight:400,
+        fontWeight:"400",
         color:'#979797'
     },
     image:{
@@ -62,7 +62,7 @@ const styles = StyleSheet.create ({
         paddingLeft: 30,
         padding:8,
         fontSize:14,
-        fontWeight:400,
+        fontWeight:"400",
         color:'#222222',
     },
     eye:{
@@ -75,32 +75,32 @@ const styles = StyleSheet.create ({
     resend:{
         color:'#4E54C8',
         fontSize:14,
-        fontWeight:500,
+        fontWeight:"500",
         alignSelf:'center',
-        top:30,
-        paddingTop:5,
+        //top:30,
+        paddingTop:hp('1%'),
     },
     login:{
         color:'#828282',
         //color:'yellow',
         fontSize:14,
-        fontWeight:400,
+        fontWeight:"400",
         //left:190,
         //paddingLeft:92,
         alignSelf:'center',
-        top:hp('30'),
-        paddingTop:5,
+        //top:hp('30'),
+        paddingTop:hp('1%'),
     },
     option:{
         color:'#828282',
         //color:'yellow',
         fontSize:14,
-        fontWeight:400,
+        fontWeight:"400",
         //left:190,
         //paddingLeft:92,
         alignSelf:'center',
-        top:150,
-        paddingTop:30,
+        //top:150,
+        paddingTop:hp('1%'),
     },
     google:{
         borderRadius:12,
@@ -110,13 +110,18 @@ const styles = StyleSheet.create ({
         justifyContent:'center',
         alignContent:'center',
        // paddingLeft:10,
+       width:wp('35%'),
+       height:hp('5%'),
     },
     btnText:{
         color:'white',
         width:100,
         height:15,
-        borderRadius:12,
-        paddingLeft:20,
+        //borderRadius:12,
+       // paddingLeft:wp('10%'),
+        //paddingRight:wp('2%'),
+        alignSelf:'center',
+        //backgroundColor:'yellow',
     },
     facebook:{
         borderRadius:12,
@@ -124,12 +129,22 @@ const styles = StyleSheet.create ({
         backgroundColor:'#3B5998',
         justifyContent:'center',
         alignContent:'center',
+        width:wp('35%'),
+        height:hp('5%'),
     },
-    logo:{
-        width:10,
-        height:10,
-        paddingRight:10,
+    button:{
+        backgroundColor:'#A044FF',
+        borderRadius:10,
         padding:10,
+        justifyContent:'center',
+        alignContent:'center',
+        width:wp('70%'),
+        height:hp('7%'),
+    },
+    buttontxt:{
+        color:'white',
+        padding:3,
+        alignSelf:'center'
     },
 });
 export default styles;

@@ -8,7 +8,7 @@ import {
   FlatList,
 } from "react-native";
 import React, { useState } from "react";
-
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import {styles} from '../HomeScreen/styles'
 import Header from "../../../components/Header";
 

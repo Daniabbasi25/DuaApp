@@ -1,12 +1,12 @@
-import { StyleSheet,Dimensions } from 'react-native'
+import { StyleSheet,Dimensions } from 'react-native';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 const {width,height}=Dimensions.get('window')
 export const styles = StyleSheet.create({
     buttonView:{
         flexDirection:'row',
         justifyContent:'space-evenly',
-        marginTop:15,
+        marginTop:hp(''),
         borderBottomWidth:1,
-        
         borderBottomColor:'rgba(196, 196, 196, 1)',
     },
     inactiveButton:{

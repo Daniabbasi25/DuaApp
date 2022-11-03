@@ -115,8 +115,13 @@ const styles = StyleSheet.create ({
     },
     btnText:{
         color:'white',
-        borderRadius:12,
-        paddingLeft:20,
+        width:100,
+        height:15,
+        //borderRadius:12,
+       // paddingLeft:wp('10%'),
+        //paddingRight:wp('2%'),
+        alignSelf:'center',
+        //backgroundColor:'yellow',
     },
     facebook:{
         borderRadius:12,
@@ -125,13 +130,7 @@ const styles = StyleSheet.create ({
         justifyContent:'center',
         alignContent:'center',
         width:wp('35%'),
-       height:hp('5%'),
-    },
-    logo:{
-        width:5,
-        height:10,
-        //paddingRight:10,
-        padding:10,
+        height:hp('5%'),
     },
     button:{
         backgroundColor:'#A044FF',
@@ -139,7 +138,7 @@ const styles = StyleSheet.create ({
         padding:10,
         justifyContent:'center',
         alignContent:'center',
-        width:wp('60%'),
+        width:wp('70%'),
         height:hp('7%'),
     },
     buttontxt:{

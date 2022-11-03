@@ -1,6 +1,9 @@
 import * as React from 'react';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import { FlatList, Text, View, StyleSheet, TouchableOpacity, Dimensions, Button, Image, TextInput, ScrollView, ImageBackground} from 'react-native';
+import Fontisto from 'react-native-vector-icons/Fontisto';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 const {width,height}=Dimensions.get('window');
 import styles from './styles';
 const Login =({navigation})=>{
@@ -25,10 +28,7 @@ const Login =({navigation})=>{
                     <View style={{paddingTop:10}}>
                     <View style={{flexDirection:'row'}}>
                     <View style={{paddingRight:10}}>
-                    <Image
-                    style={styles.image}
-                    source={require('../../../assets/email.png')}
-                    />
+                    <Fontisto name="email" size={15} color="grey"/>
                     </View>
                     <Text style={styles.text}>Email</Text>
                     </View>
@@ -41,10 +41,7 @@ const Login =({navigation})=>{
                     <View style={{paddingTop:hp('3%')}}>
                     <View style={{flexDirection:'row'}}>
                     <View style={{paddingRight:10}}>
-                    <Image
-                    style={styles.image}
-                    source={require('../../../assets/lock.png')}
-                    />
+                    <AntDesign name="lock" size={20} color="grey"/>
                     </View>
                     <Text style={styles.text}>Password</Text>
                     </View>
@@ -80,11 +77,12 @@ const Login =({navigation})=>{
                         <TouchableOpacity
                         style={styles.google}>
                             <View style={{flexDirection:'row',}}>
-                            <Image
-                            style={styles.logo}
-                            source={require('../../../assets/google.png')}
-                            />
+                            <View style={{padding:wp('2%'), }}>
+                            <AntDesign name='google' size={20} color="white"/>
+                            </View>
+                            <View style={{padding:wp('2%'), width:wp('30%'), alignContent:'center', justifyContent:'center'}}>
                             <Text style={styles.btnText}>Google</Text>
+                            </View>
                             </View>
                         </TouchableOpacity>
                         </View>
@@ -92,11 +90,12 @@ const Login =({navigation})=>{
                         <TouchableOpacity
                         style={styles.facebook}>
                             <View style={{flexDirection:'row',}}>
-                            <Image
-                            style={styles.logo}
-                            source={require('../../../assets/facebook.png')}
-                            />
+                            <View style={{padding:wp('2%'), }}>
+                            <FontAwesome name='facebook' size={20} color="white"/>
+                            </View>
+                            <View style={{padding:wp('2%'), width:wp('30%'), alignContent:'center', justifyContent:'center'}}>
                             <Text style={styles.btnText}>Facebook</Text>
+                            </View>
                             </View>
                         </TouchableOpacity>
                         </View>

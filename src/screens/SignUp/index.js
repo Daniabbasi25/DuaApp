@@ -1,6 +1,9 @@
 import * as React from 'react';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import { FlatList, Text, View, StyleSheet, TouchableOpacity, Dimensions, Button, Image, TextInput, ScrollView} from 'react-native';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import Fontisto from 'react-native-vector-icons/Fontisto';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 const {width,height}=Dimensions.get('window');
 import styles from './styles';
 const SignUp =({navigation})=>{
@@ -23,10 +26,7 @@ const SignUp =({navigation})=>{
                     <View style={{paddingTop:20}}>
                     <View style={{flexDirection:'row'}}>
                     <View style={{paddingRight:10}}>
-                    <Image
-                    style={styles.image}
-                    source={require('../../../assets/user.png')}
-                    />
+                    <AntDesign name='user' size={20} color="grey"/>
                     </View>
                     <Text style={styles.text}>Full Name</Text>
                     </View>
@@ -39,10 +39,7 @@ const SignUp =({navigation})=>{
                     <View style={{paddingTop:10}}>
                     <View style={{flexDirection:'row'}}>
                     <View style={{paddingRight:10}}>
-                    <Image
-                    style={styles.image}
-                    source={require('../../../assets/email.png')}
-                    />
+                    <Fontisto name='email' size={15} color="grey"/>
                     </View>
                     <Text style={styles.text}>Email</Text>
                     </View>
@@ -55,10 +52,7 @@ const SignUp =({navigation})=>{
                     <View style={{paddingTop:10}}>
                     <View style={{flexDirection:'row'}}>
                     <View style={{paddingRight:10}}>
-                    <Image
-                    style={styles.image}
-                    source={require('../../../assets/lock.png')}
-                    />
+                    <AntDesign name='lock' size={20} color="grey"/>
                     </View>
                     <Text style={styles.text}>Password</Text>
                     </View>
@@ -71,10 +65,7 @@ const SignUp =({navigation})=>{
                     <View style={{paddingTop:10}}>
                     <View style={{flexDirection:'row'}}>
                     <View style={{paddingRight:10}}>
-                    <Image
-                    style={styles.image}
-                    source={require('../../../assets/lock.png')}
-                    />
+                    <AntDesign name='lock' size={20} color="grey"/>
                     </View>
                     <Text style={styles.text}>Confirm Password</Text>
                     </View>
@@ -88,14 +79,12 @@ const SignUp =({navigation})=>{
                     source={require('../../assets/eye.png')}
                     /> */}
                     </View>
-                    <View style={{width:wp('70%'), justifyContent:'center', alignSelf:'center',paddingTop:30,paddingBottom:20}}>
-                    <Button
-                    //onPress={onPressLearnMore}
-                    title="Sign Up"
-                    color="#A044FF"
-                    style={{fontSize:16, borderRadius:10,alignSelf:'center'}}
-                    />
-                    <View style={{flexDirection:'row', top:20,justifyContent:'center', alignContent:'center',}}>
+                    <View style={{width:wp('70%'), justifyContent:'center', alignSelf:'center',padding:hp('2%')}}>
+                    <TouchableOpacity
+                        style={styles.button}>
+                            <Text style={styles.buttontxt}>Sign Up</Text>
+                        </TouchableOpacity>
+                    <View style={{ flexDirection:'row',justifyContent:'center', alignContent:'center',padding:hp('1%'),width:wp('60%'),}}>
                     <Text style={styles.login}>Already have an account? </Text>
                     <TouchableOpacity  onPress={() =>navigation.navigate('login')}>
                     <Text style={styles.resend}>Login</Text>
@@ -108,11 +97,12 @@ const SignUp =({navigation})=>{
                         <TouchableOpacity
                         style={styles.google}>
                             <View style={{flexDirection:'row',}}>
-                            <Image
-                            style={styles.logo}
-                            source={require('../../../assets/google.png')}
-                            />
+                            <View style={{padding:wp('2%'), }}>
+                            <AntDesign name='google' size={20} color="white"/>
+                            </View>
+                            <View style={{padding:wp('2%'), width:wp('30%'), alignContent:'center', justifyContent:'center'}}>
                             <Text style={styles.btnText}>Google</Text>
+                            </View>
                             </View>
                         </TouchableOpacity>
                         </View>
@@ -120,11 +110,12 @@ const SignUp =({navigation})=>{
                         <TouchableOpacity
                         style={styles.facebook}>
                             <View style={{flexDirection:'row',}}>
-                            <Image
-                            style={styles.logo}
-                            source={require('../../../assets/google.png')}
-                            />
+                            <View style={{padding:wp('2%'), }}>
+                            <FontAwesome name='facebook' size={20} color="white"/>
+                            </View>
+                            <View style={{padding:wp('2%'), width:wp('30%'), alignContent:'center', justifyContent:'center'}}>
                             <Text style={styles.btnText}>Facebook</Text>
+                            </View>
                             </View>
                         </TouchableOpacity>
                         </View>

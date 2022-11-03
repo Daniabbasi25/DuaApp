@@ -7,11 +7,11 @@ const styles = StyleSheet.create ({
       flex:1,
       height:height,
       width:width,
-      //backgroundColor:'yellow',
+      backgroundColor:'yellow',
     },
     text:{
       fontSize:15,
-      fontWeight:400,
+      fontWeight:"400",
     },
     title:{
       color:'#A044FF',
@@ -66,7 +66,7 @@ const styles = StyleSheet.create ({
     textF:{
       //  backgroundColor:'yellow',
         fontSize:14,
-        fontWeight:400,
+        fontWeight:"400",
         //paddingTop:34,
         //paddingLeft:20,
         //width:200,

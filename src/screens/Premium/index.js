@@ -40,6 +40,12 @@ const Premium =({navigation})=>{
                 </View>
                     <Text style= {styles.text}>Your purchase will help us fund projects of Quran and Hadith and books of children</Text>
                 </View>
+                <View style={{alignSelf:'center',paddingTop:hp('7%')}}>
+                        <TouchableOpacity
+                        style={styles.button}>
+                            <Text style={styles.buttontxt}>Update</Text>
+                        </TouchableOpacity>
+                </View>
                 </View>
 
 

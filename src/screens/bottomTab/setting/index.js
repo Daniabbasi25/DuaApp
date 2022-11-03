@@ -2,6 +2,13 @@ import * as React from 'react';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import { FlatList, Text, View, StyleSheet, TouchableOpacity, Dimensions, Button, Image, TextInput,ScrollView} from 'react-native';
 //import { Dropdown } from 'react-native-material-dropdown';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import Feather from 'react-native-vector-icons/Feather';
+import FontAwesome  from 'react-native-vector-icons/FontAwesome';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Octicons from 'react-native-vector-icons/Octicons';
 import Modal from 'react-native-modal';
 const {width,height}=Dimensions.get('window');
 import styles from './styles.js';
@@ -78,11 +85,8 @@ const Settings=({navigation})=>{
             </View>
             <TouchableOpacity>
             <View style={{flexDirection:'row', paddingLeft:wp('5')}}>
-            <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
-            <Image
-                source={require('../../../../assets/profile.png')}
-                style={{height: 18, width: 18, alignSelf:'center',}}
-                />
+            <View style={{paddingRight:wp('5%'),paddingLeft:wp('2%'),}}>
+            <AntDesign name="user" size={20} color="#A044FF"/>
             </View>
               <Text style={styles.text}>Profile Settings </Text>
             </View>
@@ -92,11 +96,8 @@ const Settings=({navigation})=>{
             </View>
             <TouchableOpacity onPress={()=>navigation.navigate('Flags')}>
             <View style={{flexDirection:'row', paddingLeft:wp('5')}}>
-            <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
-            <Image
-                source={require('../../../../assets/globe.png')}
-                style={{height: 18, width: 18, alignSelf:'center',}}
-                />
+            <View style={{paddingRight:wp('5%'),paddingLeft:wp('2%'),}}>
+            <Feather name="globe" size={20} color="#A044FF"/>
             </View>
           
               <Text  style={styles.text}>English UK </Text>
@@ -108,13 +109,9 @@ const Settings=({navigation})=>{
             </View>
             <TouchableOpacity onPress={() =>navigation.navigate("Premium")}>
             <View style={{flexDirection:'row', paddingLeft:wp('5'), padding:hp('2%')}}>
-            <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
-            <Image
-                source={require('../../../../assets/diamond.png')}
-                style={{height: 18, width: 18, alignSelf:'center',}}
-                />
+            <View style={{paddingRight:wp('5%'),paddingLeft:wp('2%'),}}>
+            <FontAwesome name="diamond" size={20} color="#A044FF"/>
             </View>
-            
               <Text  style={styles.text}>Upgrade Premium </Text>
             </View>
             </TouchableOpacity>
@@ -123,11 +120,8 @@ const Settings=({navigation})=>{
             </View>
             <TouchableOpacity>
             <View style={{flexDirection:'row', paddingLeft:wp('5'), padding:hp('2%')}}>
-            <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
-            <Image
-                source={require('../../../../assets/color.png')}
-                style={{height: 20, width: 18, alignSelf:'center',}}
-                />
+            <View style={{paddingRight:wp('5%'),paddingLeft:wp('2%'),}}>
+            <FontAwesome5 name="paint-roller" size={20} color="#A044FF"/>
             </View>
               <Text style={styles.text}>Color Scheme </Text>
               <View style={styles.arrow}>
@@ -140,33 +134,24 @@ const Settings=({navigation})=>{
             </TouchableOpacity>
             <TouchableOpacity>
             <View style={{flexDirection:'row', paddingLeft:wp('5'),padding:hp('2%')}}>
-            <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
-            <Image
-                source={require('../../../../assets/font.png')}
-                style={{height: 15, width: 20, alignSelf:'center',}}
-                />
+            <View style={{paddingRight:wp('5%'),paddingLeft:wp('2%'),}}>
+            <MaterialCommunityIcons name="format-size" size={20} color="#A044FF"/>
             </View>
               <Text style={styles.text}>Font Type </Text>
             </View>
             </TouchableOpacity>
             <TouchableOpacity>
             <View style={{flexDirection:'row', paddingLeft:wp('5'),padding:hp('2%')}}>
-            <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
-            <Image
-                source={require('../../../../assets/size.png')}
-                style={{height: 18, width: 20, alignSelf:'center',}}
-                />
+            <View style={{paddingRight:wp('5%'),paddingLeft:wp('2%'),}}>
+            <Ionicons name="md-text" size={20} color="#A044FF"/>
             </View>
               <Text style={styles.text}>Font Size</Text>
             </View>
             </TouchableOpacity>
             <TouchableOpacity>
             <View style={{flexDirection:'row', paddingLeft:wp('5'),padding:hp('2%')}}>
-            <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
-            <Image
-                source={require('../../../../assets/bightness.png')}
-                style={{height: 20, width: 21, alignSelf:'center',}}
-                />
+            <View style={{paddingRight:wp('5%'),paddingLeft:wp('2%'),}}>
+            <Feather name="sun"  size={20} color="#A044FF"/>
             </View>
               <Text style={styles.text}>Brightness</Text>
               <View style={styles.arrow}>
@@ -191,10 +176,7 @@ const Settings=({navigation})=>{
             <TouchableOpacity>
             <View style={{flexDirection:'row', paddingLeft:wp('5'),padding:hp('2%')}}>
             <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
-            <Image
-                source={require('../../../../assets/24.png')}
-                style={{height: 20, width: 21, alignSelf:'center',}}
-                />
+            <MaterialCommunityIcons name="hours-24" size={25} color="#A044FF"/>
             </View>
               <Text style={styles.text}>24 Hours Format</Text>
             </View>
@@ -204,22 +186,16 @@ const Settings=({navigation})=>{
             </View>
             <TouchableOpacity>
             <View style={{flexDirection:'row', paddingLeft:wp('5'),padding:hp('2%')}}>
-            <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
-            <Image
-                source={require('../../../../assets/share.png')}
-                style={{height: 24, width: 20, alignSelf:'center',}}
-                />
+            <View style={{paddingRight:wp('5%'),paddingLeft:wp('2%'),}}>
+            <Feather name="share-2" size={20} color="#A044FF"/>
             </View>
               <Text style={styles.text}>Share with friends </Text>
             </View>
             </TouchableOpacity>
             <TouchableOpacity>
             <View style={{flexDirection:'row', paddingLeft:wp('5'),padding:hp('2%')}}>
-            <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
-            <Image
-                source={require('../../../../assets/rateus.png')}
-                style={{height: 20, width: 21, alignSelf:'center',}}
-                />
+            <View style={{paddingRight:wp('5%'),paddingLeft:wp('2%'),}}>
+            <AntDesign name="staro" size={20} color="#A044FF"/>
             </View>
               <Text style={styles.text}>Rate Us </Text>
               <View style={styles.arrow}>
@@ -232,11 +208,8 @@ const Settings=({navigation})=>{
             </TouchableOpacity>
             <TouchableOpacity>
             <View style={{flexDirection:'row', paddingLeft:wp('5'),padding:hp('2%'),}}>
-            <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
-            <Image
-                source={require('../../../../assets/feature.png')}
-                style={{height: 18, width: 18, alignSelf:'center',}}
-                />
+            <View style={{paddingRight:wp('5%'),paddingLeft:wp('2%'),}}>
+            <MaterialCommunityIcons name="message-reply-text-outline" size={20} color="#A044FF"/>
             </View>
             <View style={{paddingRight:wp('5%')}}>
             <Text style={styles.text}>Suggest New Features </Text>
@@ -251,11 +224,8 @@ const Settings=({navigation})=>{
             </TouchableOpacity>
             <TouchableOpacity>
             <View style={{flexDirection:'row', paddingLeft:wp('5'),padding:hp('2%')}}>
-            <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
-            <Image
-                source={require('../../../../assets/privacy.png')}
-                style={{height: 21, width: 18, alignSelf:'center',}}
-                />
+            <View style={{paddingRight:wp('5%'),paddingLeft:wp('2%'),}}>
+            <MaterialCommunityIcons name="shield-lock-outline" size={20} color="#A044FF"/>
             </View>
               <Text style={styles.text}>Privacy Policy </Text>
               <View style={styles.arrow}>
@@ -269,10 +239,7 @@ const Settings=({navigation})=>{
             <TouchableOpacity>
             <View style={{flexDirection:'row', paddingLeft:wp('5'),padding:hp('2%')}}>
             <View style={{paddingRight:wp('8%'),paddingLeft:wp('2%'),}}>
-            <Image
-                source={require('../../../../assets/version.png')}
-                style={{height: 18, width: 20, alignSelf:'center',}}
-                />
+            <Octicons name="versions" size={20} color="#A044FF"/>
             </View>
               <Text style={styles.text}>Version </Text>
             </View>

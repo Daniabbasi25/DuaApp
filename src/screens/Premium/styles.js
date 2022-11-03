@@ -27,5 +27,19 @@ const styles = StyleSheet.create ({
     padding:hp('2%'),
     padding:wp('2%'),
   },
+  button:{
+    backgroundColor:'#A044FF',
+    borderRadius:10,
+    padding:hp('3%'),
+    justifyContent:'center',
+    alignContent:'center',
+    width:wp('85%'),
+    height:hp('7%'),
+},
+buttontxt:{
+    color:'white',
+    padding:3,
+    alignSelf:'center'
+},
 });
 export default styles;
