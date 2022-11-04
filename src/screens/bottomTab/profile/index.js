@@ -12,8 +12,14 @@ const Profile=()=> {
         <View style={{paddingTop:20}}>
         <View style={{ paddingLeft:10, width:wp('90%'), alignSelf:'center',}}>
             <View style={{flexDirection:'row',justifyContent:'space-between',paddingRight:10,}}>
-           
-           <Text>muhammad</Text>
+            {/* <Image
+            style={{height:50, width:35,}}
+            source={require('../../assets/boy.png')}
+            /> */}
+            {/* <Image
+            style={{height:29, width:25,}}
+            source={require('../../assets/bell.png')}
+            /> */}
 
             </View>
             <Text style={styles.text}>Hello Ali</Text>

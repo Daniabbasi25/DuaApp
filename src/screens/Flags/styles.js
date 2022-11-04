@@ -20,7 +20,7 @@ const styles = StyleSheet.create ({
     text:{
        //backgroundColor:'yellow',
         fontSize:14,
-        fontWeight:400,
+        fontWeight:"400",
         paddingTop:34,
         paddingLeft:20,
         width:200.

@@ -31,27 +31,65 @@ const SecondRoute = () => (
 
 const ThirdRoute = () => (
   <View style={{height:height,width:width, alignContent:'center',}}>
-            <View style={{width:wp('90%'), height:height, alignSelf:'center'}}>
+           <View style={{}}>
+            <View style={styles.view}>
+            
                 <View style={{flexDirection:'row'}}>
-                <View style={{paddingRight:10}}>
+                <View style={{padding:wp('2%')}}>
                 {/* <Image
                 style={styles.image}
-                source={require('../../../../assets/email.png')}
+                source={require('../../../assets/email.png')}
                 /> */}
                 </View>
-                <Text style={styles.text}>Email</Text>
+                <Text style={styles.text3}>Nick Name</Text>
                 </View>
-            </View>
+            
             <View style= {{flexDirection:'row'}}>
                 <TextInput
                 style={styles.input}
                 />
-                {/* <Image
-                style={styles.eye}
-                source={require('../../../../assets/eye.png')}
-                /> */}
-                <Text>muhammad</Text>
+                
             </View>
+            <View style={{flexDirection:'row'}}>
+                <View style={{padding:wp('2%')}}>
+                {/* <Image
+                style={styles.image}
+                source={require('../../../assets/email.png')}
+                /> */}
+                </View>
+                <Text style={styles.text3}>Email</Text>
+                </View>
+            
+            <View style= {{flexDirection:'row'}}>
+                <TextInput
+                style={styles.input}
+                />
+               
+            </View>
+            <View style={{flexDirection:'row'}}>
+                <View style={{padding:wp('2%')}}>
+                {/* <Image
+                style={styles.image}
+                source={require('../../../assets/email.png')}
+                /> */}
+                </View>
+                <Text style={styles.text3}>Password</Text>
+                </View>
+            
+            <View style= {{flexDirection:'row'}}>
+                <TextInput
+                style={styles.input}
+                />
+            </View>
+            <View style={{alignSelf:'center',paddingTop:hp('5%')}}>
+                        <TouchableOpacity
+                        style={styles.button}>
+                            <Text style={styles.buttontxt}>Update</Text>
+                        </TouchableOpacity>
+            </View>
+            </View>
+
+        </View>
 
   </View>
 );
@@ -90,7 +128,7 @@ export default function TabViewExample() {
       onIndexChange={setIndex}
       initialLayout={initialLayout}
       style={styles.container}
-      renderTabBar={props => <TabBar {...props} style={{activeColor:"green", backgroundColor:'black'}} indicatorStyle={{backgroundColor:'#A044FF', padding:1, }}/>}
+      renderTabBar={props => <TabBar {...props} style={styles.tabBar} indicatorStyle={{backgroundColor:'#A044FF', padding:1, }}/>}
     />
   );
 }

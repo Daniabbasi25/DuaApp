@@ -13,7 +13,7 @@ const styles = StyleSheet.create ({
     width:wp('90'),
     height:48,
     fontSize:16,
-    fontWeight:400,
+    fontWeight:"400",
     color:'#FFFFFF',
     alignSelf:'center',
     padding:hp('3%'),
@@ -21,7 +21,7 @@ const styles = StyleSheet.create ({
   },
   heading:{
     fontSize:24,
-    fontWeight:500,
+    fontWeight:"500",
     color:'#FFFFFF',
     alignSelf:'center',
     padding:hp('2%'),

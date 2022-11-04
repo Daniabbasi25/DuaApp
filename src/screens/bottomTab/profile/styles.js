@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     text:{
         width:126,
         height:45,
-        fontWeight:400,
+        fontWeight:"400",
         fontSize:30,
         color:'#FFFFFF',
         paddingTop:10,
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         width:254,
         height:21,
         fontSize:14,
-        fontWeight:400,
+        fontWeight:"400",
         color:'#FFFFFF',
         paddingTop:5,
     },

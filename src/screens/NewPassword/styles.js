@@ -20,7 +20,7 @@ const styles = StyleSheet.create ({
     },
     text:{
         fontSize:14,
-        fontWeight:400,
+        fontWeight:"400",
         color:'#979797'
     },
     image:{

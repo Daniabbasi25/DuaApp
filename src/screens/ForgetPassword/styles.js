@@ -20,7 +20,7 @@ const styles = StyleSheet.create ({
     },
     text:{
         fontSize:14,
-        fontWeight:400,
+        fontWeight:"400",
         color:'#979797'
     },
     image:{
@@ -41,7 +41,7 @@ const styles = StyleSheet.create ({
         color:'#828282',
         //color:'yellow',
         fontSize:14,
-        fontWeight:400,
+        fontWeight:"400",
         //left:190,
         //paddingLeft:92,
         alignSelf:'center',

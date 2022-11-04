@@ -7,7 +7,7 @@ const styles = StyleSheet.create ({
       flex:1,
       height:height,
       width:width,
-      backgroundColor:'yellow',
+      //backgroundColor:'yellow',
     },
     text:{
       fontSize:15,
@@ -15,7 +15,7 @@ const styles = StyleSheet.create ({
     },
     title:{
       color:'#A044FF',
-      fontWeight:500,
+      fontWeight:"500",
       fontSize:16,
     },
     modalBackGround: {

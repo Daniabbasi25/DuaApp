@@ -18,7 +18,7 @@ const styles = StyleSheet.create ({
     },
     text:{
         fontSize:14,
-        fontWeight:500,
+        fontWeight:"500",
         color:'#0F0702',
         alignSelf:'center',
         lineHeight:21,
@@ -37,7 +37,7 @@ const styles = StyleSheet.create ({
         borderColor:'#C4C4C4',
         borderWidth: 0.25,
         padding: 5,
-        // fontWeight:400,
+        // fontWeight:"400",
         // fontSize:14,
         // color:'red'
     },
@@ -45,7 +45,7 @@ const styles = StyleSheet.create ({
         color:'#828282',
         //color:'yellow',
         fontSize:14,
-        fontWeight:400,
+        fontWeight:"400",
         //left:190,
         //paddingLeft:92,
         alignSelf:'center',
@@ -62,13 +62,13 @@ const styles = StyleSheet.create ({
     resend:{
         color:'#4E54C8',
         fontSize:14,
-        fontWeight:500,
+        fontWeight:"500",
         alignSelf:'center',
         top:30,
         paddingTop:5,
     },
     placeholder:{
-        fontWeight:400,
+        fontWeight:"400",
         color:'red'
     }, 
 });

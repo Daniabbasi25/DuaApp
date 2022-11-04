@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     text:{
       width:86,
       height:21,
-      fontWeight:500,
+      fontWeight:"500",
       fontSize:14,
       color:'#0F0702'
     },
@@ -48,13 +48,13 @@ const styles = StyleSheet.create({
       width:115,
       height:15,
       fontSize:10,
-      fontWeight:400,
+      fontWeight:"400",
       color:'#ABABAB'
     },
     text2:{
       width:107,
       height:21,
-      fontWeight:500,
+      fontWeight:"500",
       fontSize:14,
       color:'#0F0702'
     },

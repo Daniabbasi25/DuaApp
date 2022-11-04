@@ -35,16 +35,16 @@ const styles = StyleSheet.create ({
     },
     purple:{
         color:'#A044FF',
-        fontWeight:500,
+        fontWeight:"500",
         fontSize:18,
     },
     text:{
-        fontWeight:400,
+        fontWeight:"400",
         fontSize:16,
         color:'#0F0702',
     },
     bold:{
-        fontWeight:500,
+        fontWeight:"500",
         fontSize:16,
         color:'#0F0702',
     },

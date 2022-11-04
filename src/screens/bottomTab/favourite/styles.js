@@ -34,7 +34,7 @@ const styles = StyleSheet.create ({
     text:{
        //backgroundColor:'yellow',
         fontSize:14,
-        fontWeight:500,
+        fontWeight:"500",
         padding:wp('3%'),
         //paddingLeft:20,
         //width:200,
